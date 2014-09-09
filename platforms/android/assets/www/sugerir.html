@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Destapados</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="Educando al soberano">
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.3.min.css">
+    <link rel="stylesheet" href="css/destapados.css">
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="cordova_plugins.js"></script>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.4.3.min.js"></script>
+    <script type="text/javascript" src="js/vendor/jquery.fortune.min.js"></script> 
+    <script type="text/javascript" src="js/app.js"></script>
+</head>
+<body>
+    <div id="page-suggest" class="page page-suggest" data-role="page">
+        <div class="app-error">
+            <p><span id="app-error-message"></span> <a href="index.html" rel="external">Reiniciar</a></p>
+        </div>
+        <div class="menu" data-enhance="false">
+            <ul>
+                <li><a href="acercade.html" data-transition="flip">Sobre destapados</a></li>
+                <li><a href="ranking.html" data-transition="flip">Ranking</a></li>
+                <li class="separator"></li>
+                <li><a href="login.html" data-transition="flip">Comenzar a jugar</a></li>
+            </ul>
+        </div>
+        <div class="header-content clearfix" data-role="header">
+            <div class="header-menu-access">
+                <a href="#" class="toggle-menu"></a>
+            </div>
+            <div class="header-info">
+                <div class="center">Sugerir pregunta</div>
+            </div>
+        </div>
+        <div class="content" data-role="content">
+            <form id="form-suggest" action="sugerir.html">
+                <div class="category">
+                    <select name="test">
+                        <option value="">Categoría...</option>
+                        <option value="1">Salud</option>
+                        <option value="8">Vivienda</option>
+                        <option value="4">Subsidios</option>
+                        <option value="5">Obra Pública</option>
+                        <option value="2">Educación</option>
+                        <option value="6">Presupuesto</option>
+                        <option value="3">Sueldos y Viáticos</option>
+                        <option value="7">Otros</option>
+
+                    </select>
+                </div>
+                <div class="question">
+                    <div class="question-wrapper">
+                        <div class="paper paper-1"></div>
+                        <div class="paper paper-2"></div>
+                        <div class="last-paper">
+                            <div class="question-suggest">
+                                <textarea name="question" rows="2" placeholder="Ingresa pregunta" class="cleanme"></textarea>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                <div class="answers">
+                    <ul>
+                        <li class="answer answer-1 ok"><input name="answer-ok" class="cleanme" placeholder="Respuesta correcta" /></li>
+                        <li class="answer answer-2"><input name="answer-1" class="cleanme" placeholder="Respuesta incorrecta 1" /></li>
+                        <li class="answer answer-3"><input name="answer-2" class="cleanme" placeholder="Respuesta incorrecta 2" /></li>
+                        <li class="answer answer-4"><input name="answer-3" class="cleanme" placeholder="Respuesta incorrecta 3" /></li>
+                        <li class="answer answer-4"><input name="source" class="cleanme" placeholder="Fuente (Pegar dirección web)" /></li>
+                    </ul>
+                </div>
+                <div class="form-footer">
+                    <input type="submit" value="Enviar" id="send-suggest" />
+                </div>
+            </form>
+            <div id="suggest-result" data-role="popup" data-position-to="window" data-dismissible="false" data-overlay-theme="b" data-transition="flip">
+                <p>Gracias por colaborar!</p>
+                <ul data-role="listview" data-inset="true" data-theme="b">
+                    <li><a href="#" class="ui-btn" id="suggest-other">Sugerir otra</a></li>
+                    <li><a href="login.html" class="ui-btn" data-transition="flip">Comenzar a jugar</a></li>
+                </ul>
+            </div>
+            <div id="suggest-error" data-role="popup" data-position-to="window" data-dismissible="false" data-overlay-theme="b" data-transition="flip">
+                <a href="#" data-rel="back" data-role="button" data-theme="b" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                <p id="suggest-error-message"></p>
+            </div>
+            <div class="logo-bottom"></div>
+        </div>
+	</div>
+</body>
+</html>

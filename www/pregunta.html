@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Destapados</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="Educando al soberano">
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.3.min.css">
+    <link rel="stylesheet" href="css/destapados.css">
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="cordova_plugins.js"></script>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.4.3.min.js"></script>
+    <script type="text/javascript" src="js/vendor/jquery.fortune.min.js"></script>  
+    <script type="text/javascript" src="js/app.js"></script>
+</head>
+<body>
+    <div id="page-question" class="page page-question" data-role="page">
+        <div class="app-error">
+            <p><span id="app-error-message"></span> <a href="index.html" rel="external">Reiniciar</a></p>
+        </div>
+        <div class="header-content clearfix" data-role="header">
+            <div class="header-info-only">
+                <div class="left" id="score"></div>
+                <div class="right" id="time"></div>
+            </div>
+        </div>
+        <div class="content" data-role="content">
+            <div class="question">
+                <div class="question-wrapper">
+                    <div class="paper paper-1"></div>
+                    <div class="paper paper-2"></div>
+                    <div class="paper paper-result"><span class=""></span></div>
+                    <div class="last-paper"> 
+                        <h2></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="answers">
+                <ul></ul>
+            </div>
+            <div class="source">
+                
+            </div>
+            <div id="question-result" data-role="popup" data-position-to="window" data-dismissible="false" data-overlay-theme="b" data-transition="flip">
+                <p>Puntos que sumaste: <span id="points"></span></p>
+                <ul data-role="listview" data-inset="true" data-theme="b">
+                    <li><a href="ruleta.html" class="ui-btn" data-transition="flip">Seguir jugando</a></li>
+                    <li><a href="ranking.html" class="ui-btn" data-transition="flip">Ranking</a></li>
+                    <li><a href="sugerir.html" class="ui-btn" data-transition="flip">Sugerir pregunta</a></li>
+                </ul>
+            </div>
+            <div class="logo-bottom"></div>
+        </div>
+	</div>
+</body>
+</html>

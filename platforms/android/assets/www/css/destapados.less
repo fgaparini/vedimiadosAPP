@@ -1087,3 +1087,41 @@ button {
 #question-result, #suggest-result, #suggest-error{
   padding: 20px;
 }
+
+.auspiciantes{
+  background: #fff;
+  padding: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  h2{
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    padding: 0 0 10px 0;
+    margin: 0;
+  }
+
+  .logos-auspiciantes{
+    background: url(../img/logos.jpg) no-repeat center bottom;
+    background-size: 100%;
+    position: relative;
+    height: 60px;
+  }
+  .auspiciante:link, .auspiciante:visited{
+    position: absolute;
+    display: block;
+    width: 33%;
+    height: 60px;
+    top:0;
+  }
+  .auspiciante-logo1:link,.auspiciante-logo1:visited{
+    left: 0;
+  }
+  .auspiciante-logo2:link,.auspiciante-logo2:visited{
+    left: 33%;
+  }
+  .auspiciante-logo3:link,.auspiciante-logo3:visited{
+    right: 0;
+  }  
+}
